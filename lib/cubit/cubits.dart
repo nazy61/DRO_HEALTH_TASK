@@ -7,3 +7,4 @@ export 'quantity_cubit.dart';
 export 'cart_cubit.dart';
 export 'bottomsheet_cubit.dart';
 export 'total_cubit.dart';
+export 'navbar_cubit.dart';

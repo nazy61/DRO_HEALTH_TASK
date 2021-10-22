@@ -42,6 +42,9 @@ class MyApp extends StatelessWidget {
                 create: (context) => SearchCubit(),
               ),
               BlocProvider(
+                create: (context) => NavbarCubit(),
+              ),
+              BlocProvider(
                 create: (context) => SelectedCategoryCubit(),
               ),
               BlocProvider(
