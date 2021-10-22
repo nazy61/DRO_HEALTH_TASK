@@ -8,7 +8,7 @@ part 'cart_state.dart';
 class CartCubit extends Cubit<CartState> {
   CartCubit() : super(const CartInitial([]));
 
-  void getCartItems() async {
+  Future<void> getCartItems() async {
     emit(const CartLoading());
     List<CartItem> cartItems = await Future.delayed(
       const Duration(seconds: 2),

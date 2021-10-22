@@ -100,8 +100,8 @@ class _HomeState extends State<Home> {
   }
 
   void _toggleFavorite(int productId) {
-    final productCubit = BlocProvider.of<ProductCubit>(context);
-    productCubit.favoriteProduct(productId);
+    // final productCubit = BlocProvider.of<ProductCubit>(context);
+    // productCubit.favoriteProduct(productId);
   }
 
   void _addToCart(Product product) {

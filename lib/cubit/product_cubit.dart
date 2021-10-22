@@ -63,14 +63,4 @@ class ProductCubit extends Cubit<ProductState> {
       );
     }
   }
-
-  Future<void> favoriteProduct(int id) async {
-    List<Product> products = state.product;
-
-    Product product = products.firstWhere((element) => element.id == id);
-
-    int index = products.indexOf(product);
-
-    print(index);
-  }
 }

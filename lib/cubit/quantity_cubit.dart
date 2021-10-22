@@ -16,7 +16,7 @@ class QuantityCubit extends Cubit<QuantityState> {
 
   void quantityDecreased() {
     if (state.quantity > 1) {
-      emit(QuantityIncreased(state.quantity - 1));
+      emit(QuantityDecreased(state.quantity - 1));
     } else {
       emit(const QuantityDecreased(0));
     }

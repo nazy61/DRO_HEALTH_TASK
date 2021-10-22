@@ -16,8 +16,8 @@ class CategoryCubit extends Cubit<CategoryState> {
   Future<void> getCategory() async {
     try {
       emit(const CategoryLoading());
-      final weather = await _categoryRepository.fetchCategory();
-      emit(CategoryLoaded(weather));
+      final category = await _categoryRepository.fetchCategory();
+      emit(CategoryLoaded(category));
     } on NetworkException {
       emit(
         const CategoryError("Couldn't fetch categories. Is the device online?"),
