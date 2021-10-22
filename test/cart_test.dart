@@ -35,11 +35,10 @@ void main() {
     // blocTest<CartCubit, CartState>(
     //   "emits [CartLoading, CartLoaded] states for successful getting of cart items",
     //   build: () => cartCubit,
-    //   wait: const Duration(seconds: 13),
-    //   // seed: () {
-    //   //   CartInitial state = CartInitial(cartItems);
-    //   //   return state;
-    //   // },
+    //   seed: () {
+    //     CartInitial state = CartInitial(cartItems);
+    //     return state;
+    //   },
     //   act: (cubit) => cubit.getCartItems(),
     //   expect: () => [
     //     const CartLoading(),
