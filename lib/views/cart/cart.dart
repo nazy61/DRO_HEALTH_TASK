@@ -42,7 +42,6 @@ class _CartScreenState extends State<CartScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print("-----------------Cart Widget built---------------------");
     return Scaffold(
       body: _buildBody(),
     );

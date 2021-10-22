@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import '../database/database.dart';
 import '../models/category.dart';
 import '../utils/utils.dart';
@@ -16,14 +14,6 @@ class FakeCategoryRepository implements CategoryRepository {
     return Future.delayed(
       const Duration(seconds: 5),
       () {
-        final random = Random();
-
-        // Simulate some network exception
-        // if (random.nextBool()) {
-        //   throw NetworkException();
-        // }
-
-        // Return "fetched" weather
         return Database.categories;
       },
     );

@@ -58,7 +58,6 @@ class _ProductScreenState extends State<ProductScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print("-----------------Product Widget built---------------------");
     return Scaffold(
       body: _buildBody(),
       bottomSheet: _buildBottomSheet(),

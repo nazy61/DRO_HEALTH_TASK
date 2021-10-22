@@ -67,7 +67,7 @@ class Database {
       id: 3,
       name: "Humulin",
       imageURL: "assets/images/humulin.jpeg",
-      type: "Liquis",
+      type: "Liquid",
       size: 500,
       price: 3500.0,
       categoryId: 1,

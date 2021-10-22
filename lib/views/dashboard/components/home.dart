@@ -114,7 +114,6 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    print("-----------------Home Widget built---------------------");
     return Scaffold(
       body: _buildBody(),
       floatingActionButton: BlocBuilder<ScrollCubit, ScrollState>(
@@ -614,9 +613,7 @@ class _HomeState extends State<Home> {
               ],
             );
           } else {
-            return Container(
-              child: Text("Error"),
-            );
+            return const Text("Error");
           }
         },
       ),

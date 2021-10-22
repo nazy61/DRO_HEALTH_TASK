@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import '../utils/utils.dart';
 import '../database/database.dart';
 import '../models/product.dart';
@@ -18,13 +16,6 @@ class FakeProductRepository implements ProductRepository {
     return Future.delayed(
       const Duration(seconds: 2),
       () {
-        final random = Random();
-
-        // Simulate some network exception
-        // if (random.nextBool()) {
-        //   throw NetworkException();
-        // }
-
         return Database.products;
       },
     );
@@ -35,13 +26,6 @@ class FakeProductRepository implements ProductRepository {
     return Future.delayed(
       const Duration(seconds: 2),
       () {
-        final random = Random();
-
-        // Simulate some network exception
-        // if (random.nextBool()) {
-        //   throw NetworkException();
-        // }
-
         var searchResult = Database.products
             .where(
               (element) => element.name.toLowerCase().contains(keyword),
@@ -58,20 +42,7 @@ class FakeProductRepository implements ProductRepository {
     return Future.delayed(
       const Duration(seconds: 2),
       () {
-        final random = Random();
-
-        // Simulate some network exception
-        // if (random.nextBool()) {
-        //   throw NetworkException();
-        // }
-
         if (keyword.isEmpty) {
-          var searchResult = Database.products
-              .where(
-                (element) => element.name.toLowerCase().contains(keyword),
-              )
-              .toList();
-
           return [];
         } else {
           var category = Database.categories.firstWhere(

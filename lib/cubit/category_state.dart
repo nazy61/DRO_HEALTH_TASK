@@ -19,6 +19,7 @@ class CategoryLoading extends CategoryState {
 }
 
 class CategoryLoaded extends CategoryState {
+  @override
   final List<Category> category;
   const CategoryLoaded(this.category);
 
